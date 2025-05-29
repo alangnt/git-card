@@ -17,13 +17,9 @@ if (isRepoPage()) {
 	btn.style.cursor = 'pointer';
 	
 	btn.onclick = () => {
-		const title = document.querySelector('strong.mr-2.flex-self-stretch')?.innerText;
-		const description = document.querySelector('meta[name="description"]')?.content;
 		const repoUrl = window.location.href;
 		
 		const params = new URLSearchParams({
-			title: title || '',
-			description: description || '',
 			url: repoUrl
 		});
 		
