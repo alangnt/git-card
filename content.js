@@ -27,7 +27,7 @@ if (isRepoPage()) {
 			url: repoUrl
 		});
 		
-		window.open(`https://your-gitportal.com/create?${params.toString()}`, '_blank');
+		window.open(`https://gitportal.com/extension?gitLink=${params.toString()}`, '_blank');
 	};
 	
 	document.body.appendChild(btn);
