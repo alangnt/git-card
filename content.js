@@ -19,11 +19,13 @@ if (isRepoPage()) {
 	btn.onclick = () => {
 		const repoUrl = window.location.href;
 		
-		const params = new URLSearchParams({
-			url: repoUrl
-		});
+		const match = repoUrl.match(/^https:\/\/github\.com\/([^\/]+)\/([^\/?#]+)/);
+		if (!match) return;
 		
-		window.open(`https://gitportal.com/extension?gitLink=${params.toString()}`, '_blank');
+		const repoUser = match[1];
+		const repoName = match[2];
+		
+		window.open(`https://gitportal.com/extension?gitUser=${repoUser}&gitRepo=${repoName}`, '_blank');
 	};
 	
 	document.body.appendChild(btn);
