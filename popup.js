@@ -15,7 +15,7 @@ document.getElementById('create-card').addEventListener('click', async () => {
 				const repoUser = match[1];
 				const repoName = match[2];
 				
-				window.open(`https://gitportal.com/extension?gitUser=${repoUser}&gitRepo=${repoName}`, '_blank');
+				window.open(`https://gitportal.org/extension?gitUser=${repoUser}&gitRepo=${repoName}`, '_blank');
 			}
 		});
 	} else {
