@@ -4,15 +4,15 @@ function isRepoPage() {
 
 if (isRepoPage()) {
 	const btn = document.createElement('button');
-	btn.innerText = '🧩 GitPortal Card';
+	btn.innerText = 'Generate my card';
 	btn.style.position = 'fixed';
 	btn.style.bottom = '20px';
 	btn.style.right = '20px';
 	btn.style.zIndex = 10000;
-	btn.style.padding = '10px';
+	btn.style.padding = '10px 30px';
 	btn.style.background = '#24292e';
 	btn.style.color = 'white';
-	btn.style.borderRadius = '8px';
+	btn.style.borderRadius = '25px';
 	btn.style.border = 'none';
 	btn.style.cursor = 'pointer';
 	
